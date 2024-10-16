@@ -1,0 +1,8 @@
+fn main() {
+    print("hello");
+    greet("Siddhesh", 972, 22, TRUE);
+}
+
+fn greet(name: string) {
+    print("Hello, " + name);
+}
