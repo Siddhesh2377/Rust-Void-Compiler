@@ -1,4 +1,3 @@
-
 pub struct Function {
     pub name: String,
     pub body: String,
