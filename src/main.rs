@@ -1,3 +1,7 @@
+mod data;
+
+
+use crate::data::{Argument, MethodCall};
 use regex::Regex;
 use std::fs;
 use std::io;
@@ -59,33 +63,6 @@ struct Function {
 impl Function {
     fn new(name: String, body: String) -> Function {
         Function { name, body }
-    }
-}
-
-// Define the MethodCall struct
-struct MethodCall {
-    parent_method: String,
-    name: String,
-    args: Vec<Argument>,
-}
-
-// Implement a constructor for MethodCall
-impl MethodCall {
-    fn new(parent_method: String, name: String, args: Vec<Argument>) -> MethodCall {
-        MethodCall { parent_method, name, args }
-    }
-}
-
-// Define the Argument struct
-struct Argument {
-    value: String,
-    arg_type: String,
-}
-
-// Implement a constructor for Argument
-impl Argument {
-    fn new(value: String, arg_type: String) -> Argument {
-        Argument { value, arg_type }
     }
 }
 
